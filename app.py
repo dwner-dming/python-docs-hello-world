@@ -7,7 +7,7 @@ seed_val = date.today().toordinal()
 random.seed(seed_val)
 
 # shuffle names
-names = ["Nico", "Rui", "Kathleen", "Dave", "Michael"]
+names = ["Nico", "Rui", "Kathleen", "Dave"]
 random.shuffle(names)
 
 app = Flask(__name__)
