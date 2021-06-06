@@ -1,6 +1,18 @@
-<!DOCTYPE html>
-<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+<!doctype html>
 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Who speaks first?</title>
+
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+
+</head>
+
+<body>
+  
 <h1>Who speaks first today?</h1>
 <h2>{{date_today}}</h2>
 
@@ -26,3 +38,6 @@
       <div class="name">{{names[4]}}</div>
     </div>
 </div>
+
+</body>
+</htm>
