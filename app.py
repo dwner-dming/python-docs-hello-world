@@ -15,7 +15,7 @@ def process():
     random.seed(seed_val)
 
     # shuffle names
-    names = ["Nico", "Rui", "Kathleen", "Dave", "Michael"]
+    names = ["Nico", "Rui", "Kathleen", "Dave", "Manpreet", "Michael"]
     random.shuffle(names)
 
     return (names, date_today)
