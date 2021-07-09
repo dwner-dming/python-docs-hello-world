@@ -18,12 +18,14 @@ def process():
     names = ["Nico", "Rui", "Kathleen", "Dave", "Manpreet", "Michael"]
     random.shuffle(names)
 
-    return (names, date_today)
+    display_date = date_today().strftime("%A, %d %B %Y")
+
+    return (names, display_date)
 
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    names, date_today = process()
-    return render_template("hello.html", names=names, date_today=date_today)
+    names, display_date = process()
+    return render_template("hello.html", names=names, disp_date=display_date)
