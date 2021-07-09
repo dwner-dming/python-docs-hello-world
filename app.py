@@ -18,7 +18,7 @@ def process():
     names = ["Nico", "Rui", "Kathleen", "Dave", "Manpreet", "Michael"]
     random.shuffle(names)
 
-    display_date = date_today().strftime("%A, %d %B %Y")
+    display_date = date_today.strftime("%A, %d %B %Y")
 
     return (names, display_date)
 
