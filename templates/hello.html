@@ -17,30 +17,12 @@
 <h2>{{disp_date}}</h2>
 
 <div class="box">
+  {%for i in range(n_names)%}
   <div class="item">
-    <div class="num">1</div>
-    <div class="name">{{names[0]}}</div>
+    <div class="num">{{i+1}}</div>
+    <div class="name">{{names[i]}}</div>
   </div>
-  <div class="item">
-      <div class="num">2</div>
-      <div class="name">{{names[1]}}</div>
-  </div>
-  <div class="item">
-      <div class="num">3</div>
-      <div class="name">{{names[2]}}</div>
-    </div>
-  <div class="item">
-      <div class="num">4</div>
-      <div class="name">{{names[3]}}</div>
-  </div>
-  <div class="item">
-      <div class="num">5</div>
-      <div class="name">{{names[4]}}</div>
-  </div>
-  <div class="item">
-      <div class="num">6</div>
-      <div class="name">{{names[5]}}</div>
-  </div>
+  {%endfor%}
 </div>
 
 </body>
