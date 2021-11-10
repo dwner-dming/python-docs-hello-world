@@ -9,8 +9,8 @@ def get_names_today(date_today: date) -> list:
     """Returns a list of names conditional on whos is rostered for the day"""
 
     names = ["Nico", "Rui", "Kathleen", "Dave"]
-    if date_today.weekday() in (3, 4):
-        names.append("Manpreet")
+    # if date_today.weekday() in (3, 4):
+    #     names.append("Manpreet")
 
     return names
 
