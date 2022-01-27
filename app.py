@@ -2,7 +2,19 @@ from flask import Flask, render_template
 from datetime import date, datetime
 import random
 import pytz
+from enum import IntEnum
+
 # from ipdb import set_trace
+
+
+class Day(IntEnum):
+    MON = 0
+    TUE = 1
+    WED = 2
+    THU = 3
+    FRI = 4
+    SAT = 5
+    SUN = 6
 
 
 def get_names_today(date_today: date) -> list:
@@ -10,9 +22,9 @@ def get_names_today(date_today: date) -> list:
 
     names = ["Nico", "Rui", "Kathleen", "Dave"]
 
-    # add intern-specific work days
-    # if date_today.weekday() in (3, 4):
-    #     names.append("Manpreet")
+    # add part-time worker days
+    if date_today.weekday() in (Day.MON, Day.THU, Day.FRI):
+        names.append("Kritika")
 
     return names
 
