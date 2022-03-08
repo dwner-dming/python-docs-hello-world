@@ -20,11 +20,11 @@ class Day(IntEnum):
 def get_names_today(date_today: date) -> list:
     """Returns a list of names conditional on whos is rostered for the day"""
 
-    names = ["Nico", "Rui", "Kathleen", "Dave"]
+    names = ["Nico", "Rui", "Kathleen", "Dave", "Kritika"]
 
     # add part-time worker days
-    if date_today.weekday() in (Day.MON, Day.THU, Day.FRI):
-        names.append("Kritika")
+    # if date_today.weekday() in (Day.MON, Day.THU, Day.FRI):
+    #     names.append("Kritika")
 
     return names
 
