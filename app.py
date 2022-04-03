@@ -20,7 +20,7 @@ class Day(IntEnum):
 def get_names_today(date_today: date) -> list:
     """Returns a list of names conditional on whos is rostered for the day"""
 
-    names = ["Nico", "Rui", "Kathleen", "Dave", "Kritika"]
+    names = ["Nico", "Rui", "Kathleen", "Dave", "Kritika", "Elton"]
 
     # add part-time worker days
     # if date_today.weekday() in (Day.MON, Day.THU, Day.FRI):
@@ -49,6 +49,7 @@ def process():
 
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def hello():
